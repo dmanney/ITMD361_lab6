@@ -36,7 +36,11 @@
 	<h2 id="textoutput" class="center">Show results here</h2>
   </div>
 <script type="text/javascript">
-		
+  document.getElementById("entrybutton").addEventListener("click",function(){
+    var txt = document.getElementById("entryinput").value;
+    alert("Devonald Manney: "+txt);
+	document.getElementById("textoutput").innerHTML=txt;
+	})
 </script>
 </body>
 </html>
